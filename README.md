@@ -1,43 +1,44 @@
-# home_salesHome Sales Analysis with PySpark###
-Overview
+# home_salesHome Sales Analysis with PySpark
+***Overview***
+
 This project analyzes home sales data using Apache Spark. The goal is to explore trends in home prices based on various attributes such as the number of bedrooms, bathrooms, floors, square footage, and view ratings.
 
-Tools & Technologies
-PySpark (Apache Spark)
+***Technologies***
 
-AWS S3 (for data storage)
+- PySpark (Apache Spark)
 
-Jupyter Notebook
+- AWS S3 (for data storage)
 
-Tasks Performed
-Data Ingestion: Read home sales data from an AWS S3 bucket into a PySpark DataFrame.
+- Jupyter Notebook
 
-SQL Queries: Analyze trends using SparkSQL, including:
+***Tasks Performed***
 
-Average home prices based on bedrooms, bathrooms, and year built.
+- Data Ingestion: Read home sales data from an AWS S3 bucket into a PySpark DataFrame.
 
-Price comparisons for homes with specific attributes (e.g., 3 bed, 3 bath, 2 floors).
+- SQL Queries: Analyze trends using SparkSQL, including:
 
-View rating impact on average home price.
+      - Average home prices based on bedrooms, bathrooms, and year built.
 
-Performance Optimization:
+      -Price comparisons for homes with specific attributes (e.g., 3 bed, 3 bath, 2 floors).
 
-Cached data for faster queries.
+      -View rating impact on average home price.
 
-Partitioned the dataset for efficient storage and retrieval.
+***Performance Optimization:***
 
-Compared query runtimes for uncached vs. cached data.
+- Cached data for faster queries.
 
-Data Storage: Converted data into Parquet format for optimized querying.
+- Partitioned the dataset for efficient storage and retrieval.
 
-Running the Notebook
+- Compared query runtimes for uncached vs. cached data.
+
+- Data Storage: Converted data into Parquet format for optimized querying.
+
+***Running the Notebook***
 Clone this repository:
-
-sh
-Copy
-Edit
 git clone https://github.com/yourusername/Home_Sales.git
+
 cd Home_Sales
+
 Launch Jupyter Notebook and open Home_Sales.ipynb.
 
 Ensure PySpark is properly installed and configured.
